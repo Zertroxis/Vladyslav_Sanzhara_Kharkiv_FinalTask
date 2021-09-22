@@ -60,7 +60,7 @@ public class ShoppingBagPage extends BasePage {
         return listOfProductsText;
     }
 
-    public WebElement getWaitToLoadDescriptionOfProduct(){
+    public WebElement getWaitToLoadDescriptionOfProduct() {
         return waitToLoadDescriptionOfProduct;
     }
 }

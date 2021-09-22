@@ -22,7 +22,7 @@ public class DeliveryAndReturnPage extends BasePage {
         super(driver);
     }
 
-    public void clickOnChangeDeliveryToCountryButton(){
+    public void clickOnChangeDeliveryToCountryButton() {
         changeDeliveryToCountryButton.click();
     }
 
@@ -34,7 +34,7 @@ public class DeliveryAndReturnPage extends BasePage {
         inputSearchFieldForCountries.isDisplayed();
     }
 
-    public void clickOnCountryGreatBritainButton(){
+    public void clickOnCountryGreatBritainButton() {
         clickOnGreatBritainCountry.click();
     }
 

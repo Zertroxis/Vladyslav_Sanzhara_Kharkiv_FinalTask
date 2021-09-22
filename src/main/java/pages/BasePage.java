@@ -37,7 +37,7 @@ public class BasePage {
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 
-    public void scrollToElement(final WebElement element){
+    public void scrollToElement(final WebElement element) {
         JavascriptExecutor je = ((JavascriptExecutor) driver);
         je.executeScript("arguments[0].scrollIntoView(true);", element);
     }

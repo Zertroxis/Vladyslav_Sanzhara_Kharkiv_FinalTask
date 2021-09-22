@@ -22,7 +22,7 @@ public class HelpAndFAQs extends BasePage {
         super(driver);
     }
 
-    public void clickOnInternationalDeliveriesPageButton(){
+    public void clickOnInternationalDeliveriesPageButton() {
         openInternationalDeliveriesPageButton.click();
     }
 
@@ -35,7 +35,7 @@ public class HelpAndFAQs extends BasePage {
         return listOfTextContent;
     }
 
-    public void clickOnOpenDeliveryAndReturnsPageButton(){
+    public void clickOnOpenDeliveryAndReturnsPageButton() {
         openDeliveryAndReturnsPageButton.click();
     }
 

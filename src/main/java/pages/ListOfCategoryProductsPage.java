@@ -42,58 +42,58 @@ public class ListOfCategoryProductsPage extends BasePage {
 
     public List<String> webElementListContainsText() {
         List<String> listOfProductsText = new ArrayList<>();
-        for (WebElement webElement: listOfProductsOnPage
-             ) {
+        for (WebElement webElement : listOfProductsOnPage
+        ) {
             listOfProductsText.add(webElement.getText());
         }
         return listOfProductsText;
     }
 
-    public void clickOnFirstProductOnPage(){
+    public void clickOnFirstProductOnPage() {
         getProductOnPage.get(0).click();
     }
 
-    public void clickOnFilterProductsByGender(){
+    public void clickOnFilterProductsByGender() {
         filterProductsByGender.click();
     }
 
-    public void clickOnFilterProductsByMan(){
+    public void clickOnFilterProductsByMan() {
         filterProductsByGenderMen.click();
     }
 
-    public void clickOnFilterProductType(){
+    public void clickOnFilterProductType() {
         filterProductsByProductType.click();
     }
 
-    public void clickOnFilterProductTypeBoots(){
+    public void clickOnFilterProductTypeBoots() {
         filterProductsByProductTypeBoots.click();
     }
 
-    public void clickOnSecondDrMartensBoots(){
+    public void clickOnSecondDrMartensBoots() {
         getProductOnPage.get(1).click();
     }
 
-    public WebElement getWaitToLoadSectionWithMartensBoots(){
+    public WebElement getWaitToLoadSectionWithMartensBoots() {
         return waitToLoadSectionWithMartensBoots;
     }
 
-    public void clickOnFirstProductFromCategoryProductsToWishlist(){
-         addToWishlistFromCategoryCatalogOfProduct.get(0).click();
+    public void clickOnFirstProductFromCategoryProductsToWishlist() {
+        addToWishlistFromCategoryCatalogOfProduct.get(0).click();
     }
 
-    public WebElement scrollToElementSecondDrMartensBoots(){
+    public WebElement scrollToElementSecondDrMartensBoots() {
         return getProductOnPage.get(1);
     }
 
-    public void clickOnThirdProductToOpenFromCategoryProducts(){
+    public void clickOnThirdProductToOpenFromCategoryProducts() {
         getProductOnPage.get(2).click();
     }
 
-    public WebElement waitToLoadNotingMatchesAfterSearch(){
+    public WebElement waitToLoadNotingMatchesAfterSearch() {
         return textThatNothingMatchesAfterSearch;
     }
 
-    public String getTextFromHeaderTwoNothingMatchesAfterSearch(){
+    public String getTextFromHeaderTwoNothingMatchesAfterSearch() {
         return textThatNothingMatchesAfterSearch.getText();
     }
 }

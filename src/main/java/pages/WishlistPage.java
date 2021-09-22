@@ -47,10 +47,6 @@ public class WishlistPage extends BasePage {
         return listOfProductsText;
     }
 
-    public WebElement getWaitToLoadWishlist() {
-        return waitToLoadWishlist;
-    }
-
     public void clickOnChoseSizeEu40OfShoesForFirstElementInWishListDropdownList() {
         choseSizeEU40OfShoesForFirstElementInWishListDropdownList.click();
     }
@@ -59,28 +55,28 @@ public class WishlistPage extends BasePage {
         moveToBagFromWishListButton.isEnabled();
     }
 
-    public void clickOnMoveToBagFromWishlistButton(){
-        if(moveToBagFromWishListButton.getAttribute("disabled") ==null) {
+    public void clickOnMoveToBagFromWishlistButton() {
+        if (moveToBagFromWishListButton.getAttribute("disabled") == null) {
             moveToBagFromWishListButton.click();
         }
     }
 
-    public void clickToRemoveAllProductsFromWishlistButton(){
-        for (WebElement elementProductsToRemove: deleteProductFromWishlistButton
-             ) {
+    public void clickToRemoveAllProductsFromWishlistButton() {
+        for (WebElement elementProductsToRemove : deleteProductFromWishlistButton
+        ) {
             elementProductsToRemove.click();
         }
     }
 
-    public WebElement waitToLoadTextThatWishlistIsEmpty(){
+    public WebElement waitToLoadTextThatWishlistIsEmpty() {
         return headerTextAboutEmptyWishlist;
     }
 
-    public String getTextThatWishlistIsEmpty(){
+    public String getTextThatWishlistIsEmpty() {
         return headerTextAboutEmptyWishlist.getText();
     }
 
-    public WebElement getWaitToLoadContainersWithProducts(){
+    public WebElement getWaitToLoadContainersWithProducts() {
         return waitToLoadContainersWithProducts;
     }
 

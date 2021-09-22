@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class ProductPage extends BasePage{
+public class ProductPage extends BasePage {
 
     @FindBy(xpath = "//select[@data-id = 'sizeSelect']")
     private WebElement dropdownListOfProductSize;
@@ -25,23 +25,23 @@ public class ProductPage extends BasePage{
         super(driver);
     }
 
-    public void clickOnDropdownListOfProductsSize(){
+    public void clickOnDropdownListOfProductsSize() {
         dropdownListOfProductSize.click();
     }
 
-    public void clickOnEUSize40(){
+    public void clickOnEUSize40() {
         euSize40.click();
     }
 
-    public void clickOnUKSize10(){
+    public void clickOnUKSize10() {
         ukSize10.click();
     }
 
-    public void clickOnAddToBagButton(){
+    public void clickOnAddToBagButton() {
         addToBagButton.click();
     }
 
-    public void clickOnAddToWishlist(){
+    public void clickOnAddToWishlist() {
         addToWishlist.click();
     }
 }

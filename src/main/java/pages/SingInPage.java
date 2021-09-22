@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class SingInPage extends BasePage{
+public class SingInPage extends BasePage {
 
     @FindBy(xpath = "//span[@id = 'EmailAddress-error']")
     private WebElement errorMassageToUserAboutIncorrectDataInEmailField;
@@ -22,19 +22,19 @@ public class SingInPage extends BasePage{
         super(driver);
     }
 
-    public void clickOnSingInUpButton(){
+    public void clickOnSingInUpButton() {
         singInUpButton.click();
     }
 
-    public String getTextErrorInEmailField(){
+    public String getTextErrorInEmailField() {
         return errorMassageToUserAboutIncorrectDataInEmailField.getText();
     }
 
-    public String getTextFromEmailField(){
+    public String getTextFromEmailField() {
         return emailField.getText();
     }
 
-    public String getTextFromPasswordField(){
+    public String getTextFromPasswordField() {
         return passwordField.getText();
     }
 

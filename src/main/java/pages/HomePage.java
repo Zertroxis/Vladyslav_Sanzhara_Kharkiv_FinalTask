@@ -66,7 +66,6 @@ public class HomePage extends BasePage {
     private WebElement clickOnSingInButton;
 
 
-
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -117,10 +116,6 @@ public class HomePage extends BasePage {
         searchInputButton.isEnabled();
     }
 
-    public void clickOnBagOnHeader() {
-        openBagOnHeader.click();
-    }
-
     public void scrollPageHeader() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].scrollIntoView();", header);
@@ -159,11 +154,11 @@ public class HomePage extends BasePage {
         openShoppingBagLinkButton.click();
     }
 
-    public void clickOnOpenHelpAndFAQPageButton(){
+    public void clickOnOpenHelpAndFAQPageButton() {
         openHelpAndFAQsPageButton.click();
     }
 
-    public void clickOnSingIn(){
+    public void clickOnSingIn() {
         clickOnSingInButton.click();
     }
 
@@ -171,7 +166,7 @@ public class HomePage extends BasePage {
         openDropdownAccountList.click();
     }
 
-    public WebElement waitToDisplaySingInButton(){
+    public WebElement waitToDisplaySingInButton() {
         return clickOnSingInButton;
     }
 

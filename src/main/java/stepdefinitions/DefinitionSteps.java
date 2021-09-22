@@ -164,7 +164,6 @@ public class DefinitionSteps {
         homePage.scrollPageHeader();
         homePage.waitVisibilityOfElement(TIME_TO_WAIT, homePage.getWaitToViewBagButton());
         homePage.clickOnPopUpToShoppingBagButton();
-        // homePage.clickOnBagOnHeader();
     }
 
     @Then("User check {string} amount of products in bag")
@@ -217,7 +216,6 @@ public class DefinitionSteps {
         homePage.waitForPageLoadComplete(TIME_TO_WAIT);
         listOfCategoryProductsPage = pageFactoryManager.getListOfCategoryProductsPage();
         listOfCategoryProductsPage.clickOnFirstProductFromCategoryProductsToWishlist();
-
     }
 
     @And("User open third product on page")
@@ -368,7 +366,6 @@ public class DefinitionSteps {
         listOfCategoryProductsPage = pageFactoryManager.getListOfCategoryProductsPage();
         homePage.waitVisibilityOfElement(TIME_TO_WAIT, listOfCategoryProductsPage.waitToLoadNotingMatchesAfterSearch());
         Assert.assertTrue(listOfCategoryProductsPage.getTextFromHeaderTwoNothingMatchesAfterSearch().contains(displayedResultNotMatch));
-
     }
 
     @When("User click on account button")
@@ -377,9 +374,6 @@ public class DefinitionSteps {
         homePage.waitForAjaxToComplete(TIME_TO_WAIT);
         homePage = pageFactoryManager.getHomePage();
         homePage.clickOnSingInDropdown();
-
-
-
     }
 
     @And("User click on sing in")
@@ -415,6 +409,7 @@ public class DefinitionSteps {
         singInPage = pageFactoryManager.getSingInPage();
         Assert.assertTrue(singInPage.getTextErrorInEmailField().contains(checkErrorMassageInEmailField));
     }
+
 
     @After
     public void tearDown() {
